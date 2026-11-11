@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Alba Serrano Viso · Portfolio</title>
+  <meta name="description" content="Portfolio de Alba Serrano Viso, estudiante de Desarrollo de Aplicaciones Web.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;450;500&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;1,8..60,400&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <header class="nav">
+    <div class="container nav__inner">
+      <a href="#inicio" class="nav__logo">Alba Serrano</a>
+      <nav class="nav__links" aria-label="Principal">
+        <a href="#sobre-mi">Sobre mí</a>
+        <a href="#cv">CV</a>
+        <a href="#ikigai">Ikigai</a>
+        <a href="#dafo">DAFO</a>
+        <a href="#came">CAME</a>
+      </nav>
+      <a href="#contacto" class="btn btn--filled">Contacto</a>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section id="inicio" class="hero">
+      <div class="container hero__inner">
+        <p class="tag">Portfolio · 2026</p>
+        <h1>Alba Serrano Viso, <em>desarrollo web</em></h1>
+        <p class="hero__sub">Estudiante de 2º de Desarrollo de Aplicaciones Web <br> IES Fidiana (Córdoba)</p>
+        <div class="hero__actions">
+          <a href="#cv" class="btn btn--filled">Ver mi CV</a>
+          <a href="#ikigai" class="btn btn--ghost">Conóceme</a>
+        </div>
+
+        <div class="float float--a" aria-hidden="true">
+          <span class="float__label">Estudios</span>
+          <strong>2º DAW</strong>
+          <span class="float__delta">IES Fidiana</span>
+        </div>
+        <div class="float float--b" aria-hidden="true">
+          <span class="float__label">Lenguajes</span>
+          <strong>Python · JS · SQL · PHP</strong>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sobre mí -->
+    <section id="sobre-mi" class="section section--fog">
+      <div class="container">
+        <h2>Sobre <em>mí</em></h2>
+        <div class="grid grid--3">
+          <article class="card">
+            <span class="tag">Perfil</span>
+            <h3>Adaptable y comprometida</h3>
+            <p>Bachillerato tecnológico y ahora Desarrollo de Aplicaciones Web. Me adapto rápido a nuevos entornos y busco crecer de forma constante.</p>
+          </article>
+          <article class="card">
+            <span class="tag">Experiencia</span>
+            <h3>Prácticas en Flamingo Biomechanical Lab</h3>
+            <p>Abril – Mayo de 2026, como parte del ciclo superior.</p>
+          </article>
+          <article class="card card--peach">
+            <span class="tag">Idiomas</span>
+            <h3>Inglés - B1</h3>
+            <p>Me desenvuelvo bien en inglés en situaciones profesionales.</p>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- Galería de imágenes -->
+    <section id="cv" class="section">
+      <div class="container">
+        <h2>Mi <em>CV</em></h2>
+        <figure class="artifact artifact--cv">
+          <button class="zoom" type="button" data-full="img/cv.png" data-alt="Currículum de Alba Serrano Viso">
+            <img src="img/cv.png" alt="Currículum de Alba Serrano Viso, estudiante de Desarrollo de Aplicaciones Web" loading="lazy">
+          </button>
+          <figcaption>
+            <a class="link" href="CV_Alba_Serrano_Viso.pdf" download>Descargar CV en PDF →</a>
+          </figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <section id="ikigai" class="section section--fog">
+      <div class="container">
+        <h2>Método <em>Ikigai</em></h2>
+        <figure class="artifact">
+          <button class="zoom" type="button" data-full="img/ikigai.png" data-alt="Método Ikigai de Alba">
+            <img src="img/ikigai.png" alt="Diagrama del método Ikigai de Alba: lo que amas, en lo que soy buena, lo que necesita el mundo y por lo que me pueden pagar" loading="lazy">
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <section id="dafo" class="section">
+      <div class="container">
+        <h2>Análisis <em>DAFO</em></h2>
+        <figure class="artifact">
+          <button class="zoom" type="button" data-full="img/dafo.png" data-alt="Análisis DAFO de Alba">
+            <img src="img/dafo.png" alt="Análisis DAFO de Alba Serrano Viso: debilidades, amenazas, fortalezas y oportunidades" loading="lazy">
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <section id="came" class="section section--fog">
+      <div class="container">
+        <h2>Análisis <em>CAME</em></h2>
+        <figure class="artifact">
+          <button class="zoom" type="button" data-full="img/came.png" data-alt="Análisis CAME de Alba">
+            <img src="img/came.png" alt="Análisis CAME de Alba Serrano Viso: corregir, afrontar, mantener y explotar" loading="lazy">
+          </button>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Contacto -->
+    <section id="contacto" class="section">
+      <div class="container contact">
+        <h2>Hablemos</h2>
+        <p class="hero__sub">Pozoblanco, Córdoba</p>
+        <div class="hero__actions">
+          <a href="mailto:albasevi021@gmail.com" class="btn btn--filled">albasevi021@gmail.com</a>
+          <a href="CV_Alba_Serrano_Viso.pdf" download class="btn btn--ghost">Descargar CV</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container">© 2026 Alba Serrano Viso</div>
+  </footer>
+
+  <dialog id="lightbox" aria-label="Imagen ampliada">
+    <button type="button" class="lightbox__close" aria-label="Cerrar">×</button>
+    <img src="" alt="">
+  </dialog>
+
+  <script src="script.js"></script>
+</body>
+</html>
